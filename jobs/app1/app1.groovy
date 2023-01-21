@@ -1,9 +1,9 @@
 pipelineJob("test-seed-job-pipeline") {
     definition {
         cpsScm {
-            lightweight(boolean lightweight = true)
+            lightweight(true)
             scm {
-                git(String url, Closure configure = null)
+                git("https://github.com/vikash32/java_tuts.git")
             }
         }
     }
