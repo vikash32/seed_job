@@ -3,7 +3,7 @@ pipelineJob("test-seed-job-pipeline") {
         cpsScm {
             lightweight(true)
             scm {
-                git("https://github.com/vikash32/java_tuts.git")
+                git("https://github.com/vikash32/java_tuts.git", "master")
             }
         }
     }
